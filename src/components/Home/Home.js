@@ -1,6 +1,11 @@
 import React from 'react';
+import useReview from '../../hooks/useReview';
+import Review from '../Review/Review';
 
 const Home = () => {
+    const [reviews,setReviews]=useReview()
+    const newReviews=reviews.slice(0,3)
+    console.log(newReviews);
     return (
         <div>
             <div className='grid grid-cols-2 gap-30 mt-20'>
@@ -24,7 +29,19 @@ const Home = () => {
             </div>
 
             <div>
-                <h1 className='text-4xl font-medium mt-48'>CUSTOMER REVIEWS : </h1>
+                <h1 className='text-4xl font-medium mt-48 mb-20'>CUSTOMER REVIEWS :{newReviews.length} </h1>
+                <div className="review-container">
+                {
+                    newReviews.map(review=><Review
+                    key={review.id}
+                    review={review}
+                    ></Review>)
+                }
+                </div>
+
+                <button  className='mt-8 border-2 py-2 px-3 rounded-lg bg-green-800 text-white font-semibold'>
+                    See All
+                </button>
             </div>
         </div>
     );
