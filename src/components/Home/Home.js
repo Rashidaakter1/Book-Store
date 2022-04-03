@@ -5,8 +5,8 @@ const Home = () => {
         <div>
             <div className='grid grid-cols-2 gap-30 mt-20'>
 
-                <div className="home-detail">
-                    <h1 className='text-5xl'>
+                <div className="home-detail mt-24">
+                    <h1 className='text-5xl mb-4'>
                         BUY YOUR BOOKS NOW
                     </h1>
                     <h1 className='text-5xl '>ENRICH YOUR KNOWLEDGE</h1>
@@ -18,12 +18,13 @@ const Home = () => {
 
                 </div>
 
-                <img className='mt-20 ml-56' src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAhr-tq_c2qNk-k8YtNvE8Gsvi3N-IP4GdQ&usqp=CAU`} alt="" />
+                <img className='mt-10 w-4/5 ml-20 border-2 rounded-lg
+                p-3' src={`https://img.freepik.com/free-photo/library-with-books_1063-98.jpg?size=626&ext=jpg&ga=GA1.2.797603842.1642089981`} alt="" />
 
             </div>
 
             <div>
-                <h1 className='text-4xl font-medium mt-40'>CUSTOMER REVIEWS : </h1>
+                <h1 className='text-4xl font-medium mt-48'>CUSTOMER REVIEWS : </h1>
             </div>
         </div>
     );
