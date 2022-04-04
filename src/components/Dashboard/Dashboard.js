@@ -1,5 +1,6 @@
 import React from 'react';
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, Legend, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
+import './Dashboard.css'
 
 const Dashboard = () => {
     const data = [
@@ -46,8 +47,8 @@ const Dashboard = () => {
             <h1 className='text-5xl mb-10 font-medium text-blue-900 border-2
              rounded-2xl px-4 py-5 bg-blue-200'>DASHBOARD</h1>
 
-            <div className="flex flex-wrap ml-12">
-                <div>
+            <div className="flex flex-wrap ml-12  ">
+                <div className='dash-board'>
                     <h3 className='text-blue-900 font-bold mb-4'>MONTH WISE SELL</h3>
                     <LineChart width={500} height={250} data={data}
                         margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>

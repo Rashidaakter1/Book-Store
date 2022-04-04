@@ -12,10 +12,10 @@ const Home = () => {
             <div className='grid grid-cols-2 gap-30 mt-20'>
 
                 <div className="home-detail mt-24">
-                    <h1 className='text-5xl font-bold mb-4 text-gray-700'>
+                    <h1 className='text-4xl font-bold mb-4 text-gray-700'>
                         MEET YOUR NEXT FAVOURITE BOOK
                     </h1>
-                    <h1 className='text-5xl font-bold text-cyan-700'>ENRICH YOUR KNOWLEDGE</h1>
+                    <h1 className='text-4xl font-bold text-cyan-700'>ENRICH YOUR KNOWLEDGE</h1>
                     <p className='mt-5 text-justify ml-6 font-medium'>Reading is important because it develops our thoughts, gives us endless knowledge and lessons while keeping our minds active. Books can hold and keep all kinds of information, stories, thoughts and feelings unlike anything else in this world. The importance of a book to help us learn and understand things cannot be underestimated.</p>
 
                     <button className='mt-8 border-2 py-3 px-10 rounded-lg bg-cyan-600 text-white font-semibold'>
