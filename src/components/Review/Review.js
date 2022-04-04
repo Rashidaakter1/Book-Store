@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Review = (props) => {
-    const { name } = props.review
+    const { name,body,ratings } = props.review
     return (
         <div className='border-2 rounded-3xl '>
             <div className='mt-6 ml-10 flex items-center'>
@@ -10,8 +10,11 @@ const Review = (props) => {
             </div>
             <div>
                 <p className='border-2 rounded-3xl mt-4 p-4'>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quasi voluptatibus ipsam veniam explicabo minus beatae? Veritatis modi molestiae odit?
+                    {
+                        body
+                    }
                 </p>
+                <small className='font-bold'>Ratings : {ratings}</small>
             </div>
         </div>
     );
